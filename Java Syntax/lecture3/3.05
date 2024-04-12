@@ -1,0 +1,29 @@
+package com.javarush.task.pro.task03.task0305;
+
+import java.util.Scanner;
+
+/* 
+Три числа
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+    Scanner console = new Scanner (System.in);
+    int a = console.nextInt();
+    int b = console.nextInt();
+    int c = console.nextInt();
+    boolean tri = (a == b && b == c);
+    boolean dva1 = (a == b);
+    boolean dva2 = (a == c);
+    boolean dva3 = (b == c);
+    
+    if (dva1)
+        System.out.println(a +" "+ b);
+    if (dva2)
+        System.out.println(a +" "+ c);
+    if (dva3)
+        System.out.println(b +" "+ c);
+    if (tri)
+        System.out.println(a +" "+ b +" "+ c);
+    }
+}
